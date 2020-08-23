@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*
+		{
+			margin : 0;			
+			padding: 0;
+		}
+
+		.header
+		{
+			margin : 0 auto;
+			width : 960px;
+			height: 200px;
+			border : 1px solid black;
+			background: url("img/c13-header.jpg");
+			position: relative;
+		}
+	
+	
+		ul
+		{
+			list-style-type: none;
+			
+
+		}
+			.menu
+		{
+			/*border : 1px solid black;*/
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			width: 500px;
+	
+		}
+
+		li a
+		{
+			display: block;
+			background: #1e90ff;
+			float:left;
+			padding: 10px 20px;
+			border-right: 3px solid #000;
+			border-top:  3px solid #000;
+			border-bottom:  3px solid #000;
+			height: 15px; 
+			line-height: 15px;
+			text-decoration: none;
+			font-size: 16px;
+			color: #FFF;
+			font-size: 20px;		
+		}
+
+		li a:hover
+		{
+			background-color: #5352ed;
+			color: black;
+		}
+
+		.content
+		{
+			margin : 0 auto;
+			width : 960px;
+			border : 1px solid black;
+			border-top : 0px;
+			padding-top: 20px;
+			background: #00d8d6;
+			margin-bottom: 50px;			
+		}
+		.content h1
+		{
+			margin-left: 10px;
+		}
+		.regis
+		{
+		border: 2px solid black;
+		margin-left: 15px;	
+		margin-right: 50px;	
+		margin-bottom: 20px;
+		padding: 10px 20px ;
+		font-size: 24px;
+		}
+		.regis p, input
+		{
+			font-size: 22px;			
+		}
+		.regis p
+		{
+			margin-bottom: 20px;
+		}
+		
+
+	</style>
+</head>
+<body>
+<div class="header">
+
+	
+	
+	<div class="menu">
+		<ul>
+			<li><a href="home.html">It is me</a></li>
+			<li><a href="ask.html">Asking me</a></li>
+			<li><a href="gallery.html">My Traveling Gallery</a></li>			
+		</ul>
+	</div>	
+</div>
+<div class="content">
+<h1>Hai. Silahkan isi formulir ini untuk bertanya ke aku. Thankyou !</h1>
+
+<form class="regis">
+		<p>Nama     : <input type="text" size="20"></p>
+		<p>Tinggal di Kota : <input type="text" size="15" maxlength="8"></p>
+		<p>
+		Gender : <label><input type="radio" name="gender"> Laki-Laki</label>
+				 <label><input type="radio" name="gender"> Perempuan</label>
+		</p>
+		<p>
+		Sekolah :
+		<select>
+			<option>-</option>
+			<option>TK</option>
+			<option>SD</option>
+			<option>SMP</option>
+			<option>SMA</option>
+			<option>Kuliah</option>
+			<option>Kerja</option>
+		</select>
+		</p>
+		<p>
+			Apa yang ingin kamu tanyakan ? <br>
+			<textarea cols="40" rows="5"></textarea>
+		</p>		
+		<p>
+			Mau ngobrolin tentang :<br>
+			<label><input type="checkbox"> Tentang Games</label>
+			<label><input type="checkbox"> Tentang Makanan</label>
+			<label><input type="checkbox"> Tentang Sekolah</label>
+		</p>
+
+
+		<p><input type="submit" value="KIRIM">		
+	</form>
+
+</div>
+</body>
+</html>
